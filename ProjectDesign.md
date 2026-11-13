@@ -39,11 +39,11 @@
 -	Describe the approach, methods, and tools you will use to design, implement,
 -	and evaluate the project.
 -	You can structure it like this:
-    - System Design Overview
+    - System Design Overview:
     The system will use role-based access control to manage user permissions. Each user will be assigned a role, such as admin, developer, or player. Roles will have different levels of access depending on the actions they are allowed to perform. Admins will also have the ability to create new roles and assign permissions to them.
-    - Data Collection & Preprocessing
+    - Data Collection & Preprocessing:
     The project will use manually created characters and resources rather than external data. Users will be assigned a role with permissions that determine their level of access. Passwords will be hardcoded for the initial implementation.
-    - Implementation Details
+    - Implementation Details:
     We will be using Java for our project. Classes and methods will manage players, roles, permissions, and resources. The program will check a user's permissions before allowing them to view, edit, or change anything. Admins will also be able to create custom roles and update the permissions for each role. An audit log will record important actions, such as access attempts, resource changes, and role modifications.
-    - Evaluation Metrics
+    - Evaluation Metrics:
     Our evaluation metrics will focus on testing different roles and their ability to access and view resources. We will check that admins can create new roles and assign permissions, developers can view and edit resources, and players have the appropriate permissions. We will also make sure that important actions are recorded in the audit log. Testing itself will mainly focus on making sure permissions are properly implemented and enforced.

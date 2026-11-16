@@ -1,39 +1,53 @@
 # Project Design Document – CS 331
-## Project Title: 
+## Project Title:
 ## Team Member(s): Jay Berry, Austin Mahon, Caden Anderson
 ### Objective (Purpose of the Project)
-- Clearly state what the project aims to achieve.
-- Simulate RBAC by authenticating user log in 
-- Mention why this project is important or relevant to this course.	
-- Example points to include:
-    - The problem or gap the project addresses.
-    - The main goals and expected outcomes.
-    - How the project contributes to research or practice.
+
+The primary objective of this project is to build a local Java application that simulates Role Based Access Control (RBAC). The application is meant to simulate an internal workplace with users assigned to roles with different permission levels. Users that do not have permissions will be restricted to certain actions.
+
+The security features show that only authorized users will have access to relevant information and functions based on their role in the company. I.E. Admin can create/assign roles, developers can edit pages, and public users only have viewing permissions.
+
+Users will be assigned roles by an administrator, authenticated through a login page, and the application will enforce permissions based on assigned roles. In addition actions performed by any role will be logged in a `log.txt` file.
+
+The completed application will demonstrate how RBAC provides authorization, least privilege, and accountability. The project will show how security works while also keeping a log to show how a security threat can be traced back to previous actions.
+
 ### Scope
-- Define the boundaries of the project: what is included and excluded.
-- Is this hosted, or ran locally? Is this with real data? Is this end to end? Is there a UI?
-    - Local
-    - Simulated Data
-    - Basic login page
-        - Admin account can access all pages + add pages
-        - can access all pages
-        - only public pages
-        - Custom role? 
-    - Log.txt to track access
-- Describe the target audience, systems, or environments involved.
-    - Office
-    - Restaurant
-    - Anyone with diff access employees
-- Mention any assumptions or limitations.
+
+The project will simulate an office environment with multiple user roles that have different levels of access to actions and data.
+
+#### Included Features:
+- [ ] Simulated Public Data
+- [ ] Login Interface
+- [ ] Role Based Permissions
+- [ ] Administrator Role
+- [ ] Private Data
+- [ ] Authorization
+- [ ] Action Logging
+
+#### "Late Game" Features:
+- [ ] MFA
+- [ ] Custom Roles
+- [ ] Role Inheritance
+
+#### Target Audience/Environment
+THe application will demonstrate RBAC in an office environment but the concepts can be applied to restaurants, video games, schools, and other areas with different permission levels.
+
+| Permission | Admin | Developer | User |
+|---|---|---|---|
+| View public page | [x] | [x] | [x] |
+| View staff page | [x] | [x] | [ ] |
+| Edit resources | [x] | [x] | [ ] |
+| Create roles | [x] | [ ] | [ ] |
+| Assign user roles | [x] | [ ] | [ ] |
+
 ### Security Concepts Applied
--	Describe the core security principles and concepts applied in the
--	project. You can include, but are not limited to, concepts such as:
--	Confidentiality, Integrity, Availability (CIA)
--	Authentication and Authorization
--	Least Privilege, Open Design, etc.
-    - RBAC
-    - jay.admin
-    - john.dev
+-	Describe the core security principles and concepts applied in the project. You can include, but are not limited to, concepts such as:
+    - Confidentiality, Integrity, Availability (CIA)
+    - Authentication and Authorization
+    - Least Privilege, Open Design, etc.
+        - RBAC
+        - jay.admin
+        - john.dev
  
 Our project applies the AAA+I model from Module 5 to a locally hosted Java web application. The main concept we will demonstrate is role-based access control (RBAC). An admin will use the web interface to create accounts, configure roles by selecting permissions and assign those roles to users.
 

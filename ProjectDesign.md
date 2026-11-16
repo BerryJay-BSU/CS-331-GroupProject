@@ -34,11 +34,11 @@ THe application will demonstrate RBAC in an office environment but the concepts 
 
 | Permission | Admin | Developer | User |
 |---|---|---|---|
-| View public page | - [x] | [x] | [x] |
-| View staff page | - [x] | [x] | [ ] |
-| Edit resources | - [x] | [x] | [ ] |
-| Create roles | - [x] | [ ] | [ ] |
-| Assign user roles | [x] | [ ] | [ ] |
+| View public page | Allow | Allow | Allow |
+| View staff page | Allow | Allow | Deny |
+| Edit resources | Allow | Allow | Deny |
+| Create roles | Allow | Deny | Deny |
+| Assign user roles | Allow | Deny | Deny |
 
 ### Security Concepts Applied
 -	Describe the core security principles and concepts applied in the project. You can include, but are not limited to, concepts such as:

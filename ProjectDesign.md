@@ -34,10 +34,10 @@ THe application will demonstrate RBAC in an office environment but the concepts 
 
 | Permission | Admin | Developer | User |
 |---|---|---|---|
-| View public page | [x] | [x] | [x] |
-| View staff page | [x] | [x] | [ ] |
-| Edit resources | [x] | [x] | [ ] |
-| Create roles | [x] | [ ] | [ ] |
+| View public page | - [x] | [x] | [x] |
+| View staff page | - [x] | [x] | [ ] |
+| Edit resources | - [x] | [x] | [ ] |
+| Create roles | - [x] | [ ] | [ ] |
 | Assign user roles | [x] | [ ] | [ ] |
 
 ### Security Concepts Applied

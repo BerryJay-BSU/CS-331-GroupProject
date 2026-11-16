@@ -41,20 +41,13 @@ THe application will demonstrate RBAC in an office environment but the concepts 
 | Assign user roles | Allow | Deny | Deny |
 
 ### Security Concepts Applied
--	Describe the core security principles and concepts applied in the project. You can include, but are not limited to, concepts such as:
-    - Confidentiality, Integrity, Availability (CIA)
-    - Authentication and Authorization
-    - Least Privilege, Open Design, etc.
-        - RBAC
-        - jay.admin
-        - john.dev
- 
-Our project applies the AAA+I model from Module 5 to a locally hosted Java web application. The main concept we will demonstrate is role-based access control (RBAC). An admin will use the web interface to create accounts, configure roles by selecting permissions and assign those roles to users.
+
+Our project applies the AAA+I model from Module 5 to a locally hosted Java web application. The main concept we will demonstrate is role based access control (RBAC). An admin will use the web interface to create accounts, configure roles by selecting permissions and assign those roles to users.
 
 AAA+I model application:
 -	Identification: Each user enters a unique username and password on the login page. The username identifies which account is requesting access.
 -	Authentication: The application verifies the username and password. After a successful login, a session identifies the signed in user until the user logs out. Our project will use demo credentials while a production version should be storing passwords using a dedicated password hashing algorithm with a unique salt for each password and use HTTPs to protect credentials in transit for appropriate authentication.
--	Authorization: A role is a set of permissions chosen by the admin. For each protected request, the Java backend checks whether the user’s assigned role allows the requested action on that resource and or when logging in and loading the session some resources and actions may not even be present to request access to. For example, only an admin account can create and assign roles to other users and (Role name) can (allowed action) on (resource). If a role lacks permission to an action, the backend denies the request, including when the user opens a protected URL directly.
+-	Authorization: A role is a set of permissions chosen by the admin. For each protected request, the Java backend checks whether the user’s assigned role allows the requested action on that resource and or when logging in and loading the session some resources and actions may not even be present to request access to. For example, only an admin account can create and assign roles to other users and view and edit public and private resources while a user can only view public resources. If a role lacks permission to an action, the backend denies the request, including when the user opens a protected URL directly.
 -	Accounting: We plan to log role assignments, changes to role permissions, actions, requests and denied access attempts. Each entry will record the account, action, time and outcome so admin can review who did what. The log will exclude passwords.
 
 CIA Triad application:

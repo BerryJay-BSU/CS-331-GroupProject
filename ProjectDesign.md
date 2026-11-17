@@ -1,5 +1,5 @@
 # Project Design Document – CS 331
-## Project Title:
+## Project Title: C-Smooth LLC
 ## Team Member(s): Jay Berry, Austin Mahon, Caden Anderson
 ### Objective (Purpose of the Project)
 

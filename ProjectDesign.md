@@ -30,7 +30,7 @@ The project will simulate an office environment with multiple user roles that ha
 - [ ] Role Inheritance
 
 #### Target Audience/Environment
-THe application will demonstrate RBAC in an office environment but the concepts can be applied to restaurants, video games, schools, and other areas with different permission levels.
+The application will demonstrate RBAC in an office environment but the concepts can be applied to restaurants, video games, schools, and other areas with different permission levels.
 
 | Permission | Admin | Developer | User |
 |---|---|---|---|
